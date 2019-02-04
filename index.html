@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+ 
+</head>
+<body>
+  <div id="wrapper"
+  > 
+    <form>
+    <input class="speech" type="search" id="speech" name="speech" size=60>
+    <input class="speech"  type="button" value="Click to Speak" onclick="recognition.start()">
+    <h1 id="testingSpeech"> </h1>
+</form>
+    
+    <button id="test"> test </button>
+    <div class="desktop">
+      <nav>
+        <ul class="flex">
+          <li>HOME</li>
+          <li>SLOTS</li>
+          <li>CASINO</li>
+          <li>LIVE DEALER</li>
+          <li>SPORTS</li>
+        </ul>
+      </nav>
+
+
+      <div id="desktop-flex">
+
+        <section>
+          <h2>section 1</h2>
+            <div class="row">
+              <div  class="column" onclick="openTab('b1');"style=
+                    background-image:url('sport3.jpg')>1</div>
+              <div  class="column" onclick="openTab('b2');" style=
+                    background-image:url('spot2.jpg')></div>
+              <div  class="column" onclick="openTab('b3');" style=
+                    background-image:url('spot1.jpg')></div>          
+              <div  class="column" onclick="openTab('b4');"style=
+                    background-image:url('spot4.jpg') ></div>
+          </div>
+
+          <!-- The expanding grid (hidden by default) -->
+          <div id="b1" class="containerTab">
+          <!-- If you want the ability to close the container, add a close button -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+              <div id="games">        
+                        <div class="box" name="sss" value='test'></div>  
+                        <div class="box" value='cleo'></div>            
+                        <div class="box" value='sacred'></div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+            </div>
+            
+        </div>
+
+      </section>
+
+      <section>
+ 
+        <div id="b2" class="containerTab">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+          <div id="games">        
+                        <div class="box" value='test'>12</div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+            </div>
+        </div>
+
+        <div id="b3" class="containerTab">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+          <div id="games">        
+                         <div class="box" value='test'>5</div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>          
+            </div>
+          
+          
+          
+        </div>
+
+         <div id="b4" class="containerTab">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <div id="games">        
+              <div class="box" value='test'>5</div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>          
+            </div>
+          
+        </div>
+
+  </section>
+
+
+
+
+
+  <section>
+        <h2>section 2</h2>
+          <div class="row">
+            <div  class="column" onclick="openTab('b5');"style=
+                  background-image:url('sport3.jpg')>1</div>
+            <div  class="column" onclick="openTab('b6');" style=
+                  background-image:url('spot2.jpg')></div>
+            <div  class="column" onclick="openTab('b7');" style=
+                  background-image:url('spot1.jpg')></div>          
+            <div  class="column" onclick="openTab('b8');"style=
+                  background-image:url('spot4.jpg') ></div>
+          </div>
+
+
+          <!-- The expanding grid (hidden by default) -->
+          <div id="b5" class="containerTab">
+          
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+              <div id="games">        
+                        <div class="box" name="sss" value='test'></div>  
+                        <div class="box" value='cleo'>1</div>            
+                        <div class="box" value='sacred'></div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+            </div>
+            
+
+
+        </div>
+
+        <div id="b6" class="containerTab">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <div id="games">        
+              <div class="box" value='test'>12</div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+          </div>
+      </div>kiukui
+
+        <div id="b7" class="containerTab">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+           <div id="games">        
+              <div class="box" value='test'>5</div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>          
+           </div>
+        </div>
+    </section>
+
+ <section>
+        <h2>section 3</h2>
+          <div class="row">
+            <div  class="column" onclick="openTab('b5');"style=
+                  background-image:url('sport3.jpg')>1</div>
+            <div  class="column" onclick="openTab('b6');" style=
+                  background-image:url('spot2.jpg')></div>
+            <div  class="column" onclick="openTab('b7');" style=
+                  background-image:url('spot1.jpg')></div>          
+            <div  class="column" onclick="openTab('b8');"style=
+                  background-image:url('spot4.jpg') ></div>
+          </div>
+
+
+          <!-- The expanding grid (hidden by default) -->
+          <div id="b5" class="containerTab">
+          
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+              <div id="games">        
+                        <div class="box" name="sss" value='test'></div>  
+                        <div class="box" value='cleo'>1</div>            
+                        <div class="box" value='sacred'></div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+            </div>
+            
+
+
+        </div>
+
+        <div id="b6" class="containerTab">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <div id="games">        
+              <div class="box" value='test'>12</div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+          </div>
+      </div>
+
+        <div id="b7" class="containerTab">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+           <div id="games">        
+              <div class="box" value='test'>5</div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>          
+           </div>
+        </div>
+    </section>
+
+
+
+ <section>
+        <h2>section 4</h2>
+          <div class="row">
+            <div  class="column" onclick="openTab('b5');"style=
+                  background-image:url('sport3.jpg')>1</div>
+            <div  class="column" onclick="openTab('b6');" style=
+                  background-image:url('spot2.jpg')></div>
+            <div  class="column" onclick="openTab('b7');" style=
+                  background-image:url('spot1.jpg')></div>          
+            <div  class="column" onclick="openTab('b8');"style=
+                  background-image:url('spot4.jpg') ></div>
+          </div>
+
+
+          <!-- The expanding grid (hidden by default) -->
+          <div id="b5" class="containerTab">
+          
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+              <div id="games">        
+                        <div class="box" name="sss" value='test'></div>  
+                        <div class="box" value='cleo'>1</div>            
+                        <div class="box" value='sacred'></div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+                        <div class="box" value='test'></div>            
+            </div>
+            
+
+
+        </div>
+
+        <div id="b6" class="containerTab">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+            <div id="games">        
+              <div class="box" value='test'>12</div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+          </div>
+      </div>
+
+        <div id="b7" class="containerTab">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+           <div id="games">        
+              <div class="box" value='test'>5</div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>            
+              <div class="box" value='test'></div>          
+           </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+     </div> <!-- end of desktop-flex -->
+</div> <!-- end of wrapper -->
+
+
+<script src="script.js"></script>
+</body>
+</html>

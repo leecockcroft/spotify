@@ -1,0 +1,228 @@
+#wrapper{
+  
+  background-color:#000;
+  margin:auto;
+    color:#fff;
+   
+  
+
+}
+
+.speech{
+
+position:fixed;
+
+}
+
+.box{
+  animation-duration: 1s;
+  animation-name: example;
+  height:43px;
+
+}
+
+
+@keyframes example {
+
+from{height:0;}
+to{height:43px;}
+
+
+
+}
+
+
+
+.row{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  color:#fff;
+}
+
+.flex{
+      display: flex;
+    justify-content: center;
+    width: 90%;
+
+    list-style: none;
+    flex-wrap: wrap;
+   
+}
+
+nav
+{
+  border:1px solid #fff;
+}
+
+.flex li
+{
+ padding-left:5px;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+
+  
+ 
+
+      background-size: cover;
+    cursor: pointer;
+    width: 47%;
+    height: 159px;
+    padding: 0px;
+    /* margin-left: 25px; */
+    margin: 5px;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+
+
+
+.box
+{
+  width:200px;
+  height:43px;
+  border:1px solid #fff;
+  margin-left:4px;
+  color:#fff;
+  
+}
+
+hr
+{
+
+  margin: 24px;
+}
+
+#games{
+  display:flex;
+      justify-content: center;
+  
+}
+
+.containerTab{
+
+  display:none;
+
+}
+
+
+
+
+
+@media only screen and (min-width: 768px){
+
+.box{
+   animation-duration: 1s;
+animation-name: example;
+height:140px;
+}
+.column{
+   
+    width: 23%;
+    height: 159px;
+  
+
+  }
+
+
+@keyframes example {
+
+from{height:0;}
+to{height:128px;}
+
+
+
+}
+
+}
+
+
+@media only screen and (min-width: 1025px){
+
+.column{
+   
+      width: 290px;
+    height: 188px;
+    /* padding: 45px; */
+    margin: 16px;
+
+}
+.row
+{
+ width:100%;
+
+  
+}
+
+.desktop{
+  display:flex;
+}
+
+
+.flex
+{
+  flex-direction: column
+}
+.column{
+      width: 359px;
+    height: 278px;
+}
+
+}
+
+@media only screen and (max-width: 320px)
+{
+.column {
+   height:140px;
+   width:46%;
+
+
+
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.page {
+  overflow: hidden;
+  header {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+// Hide the arrows at smaller width
+@media screen and (max-width: 500px) {
+  .glide__arrows {
+    display: none;
+  }
+}
