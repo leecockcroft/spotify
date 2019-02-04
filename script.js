@@ -51,7 +51,7 @@ function launchGame(){
 
  launchGame()
 
- var recognition = new webkitSpeechRecognition;
+ var recognition = new webkitSpeechRecognition();
  var returnedSpeech=[];
  recognition.onresult = function(event) {
       
@@ -59,8 +59,8 @@ function launchGame(){
         speech.value = event.results[0][0].transcript;
         speech.form.submit();
         var x=speech.value
-        document.write(q.value)
-        readOutLoud(q.value)
+        document.write(x)
+        readOutLoud(x)
         openGame(q.value)
       }
     }
