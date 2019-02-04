@@ -59,9 +59,9 @@ function launchGame(){
         speech.value = event.results[0][0].transcript;
         speech.form.submit();
         var x=speech.value
-        document.write(x)
+        
         readOutLoud(x)
-        openGame(q.value)
+        openGame(x)
       }
     }
 
@@ -91,7 +91,7 @@ var test =new Games('test')
 function openGame(game){
   
  let returnGame=window[game]
-console.log(returnGame.url)
+alert(returnGame.url)
   
   
 }
