@@ -1,13 +1,15 @@
 // Hide all elements with class="containerTab", except for the one that matches the clickable grid column
 var Games= function(url,img){
   this.url=url;
-  this.img=img
+  this.img=img;
+ 
 }
 
 
 var test= new Games('http://www.google.com','Harley-Davidson-Freedom-Tour-268x224.jpg')
 var cleo= new Games('http://www.google.com','Cleopatra-PLUS-268x224.jpg')
 var sacred= new Games('http://www.google.com','SacredStones_268x224.jpg')
+
 
 
 function openTab(tabName) {
@@ -53,7 +55,7 @@ launchGame()
       var x=speech.value;
 
       
-      openGame(x)
+      myFunction(x)
       }
     }
 
@@ -73,14 +75,26 @@ function readOutLoud(message) {
 
 
 function openGame(str) {
+
+
 let test = window[str]
-console.log(str)
-alert(str)
-
-
-
+alert(test.url)
 
 } 
+
+function myFunction(xxx) {
+  
+  var patt = new RegExp("est");
+  var res = patt.test(xxx);
+  if(res){
+
+openGame('test')
+
+  }
+
+  
+}
+
   
 
 
